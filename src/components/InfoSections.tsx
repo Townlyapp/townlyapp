@@ -1,5 +1,5 @@
 
-import { Home, Users, Smile } from 'lucide-react';
+import { Home, Users, Smile, LineChart } from 'lucide-react';
 import { useEffect } from 'react';
 import BlurContainer from './ui/BlurContainer';
 import { cn } from '@/lib/utils';
@@ -28,8 +28,8 @@ const InfoSections = () => {
   const sections = [
     {
       id: 'home',
-      title: 'Sentirsi a casa',
-      description: "Aiuta i tuoi talenti a integrarsi rapidamente nella città e nella community aziendale. La nostra piattaforma connette persone, eventi e opportunità in un'esperienza fluida e coinvolgente.",
+      title: 'Radicamento Locale',
+      description: "Riduci i tempi di adattamento dei nuovi assunti con un sistema strutturato di integrazione locale. I dipendenti soddisfatti sono 3 volte più produttivi e hanno il 70% in meno di probabilità di cercare nuove opportunità.",
       icon: Home,
       color: 'text-townly-orange bg-townly-orange/10',
       imageSrc: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -38,9 +38,9 @@ const InfoSections = () => {
     },
     {
       id: 'community',
-      title: 'Community attiva',
-      description: "Crea una vera community attraverso la nostra chat dedicata. Condividi esperienze, partecipa a eventi formativi online e offline, e costruisci relazioni professionali che vanno oltre il semplice networking.",
-      icon: Users,
+      title: 'Formazione Ottimizzata',
+      description: "Taglia i costi di formazione tradizionale fino al 30% con un mix strategico di training online e offline. Eventi formativi mirati che trasformano l'apprendimento in vantaggio competitivo misurabile con analytics di engagement.",
+      icon: LineChart,
       color: 'text-blue-600 bg-blue-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
       direction: 'left',
@@ -48,8 +48,8 @@ const InfoSections = () => {
     },
     {
       id: 'ambiente',
-      title: 'Crescita e benessere',
-      description: "Offri opportunità di sviluppo professionale attraverso eventi tematici e formazione continua. Un ambiente di lavoro stimolante e positivo è la chiave per attrarre e trattenere i migliori talenti.",
+      title: 'ESG e Sostenibilità',
+      description: "Raggiungi e documenta facilmente gli obiettivi ESG con una piattaforma che misura l'impatto sociale, il benessere dei dipendenti e la sostenibilità delle iniziative. Semplifica la rendicontazione con dati automatizzati e KPI chiari.",
       icon: Smile,
       color: 'text-green-600 bg-green-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -64,11 +64,11 @@ const InfoSections = () => {
       <div className="section-container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
           <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
-            Le Nostre Soluzioni
+            Ottimizzazione dei Costi
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Welfare aziendale reinventato</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Welfare che genera valore aziendale</h2>
           <p className="text-lg text-gray-600">
-            Scopri come Townly può trasformare l{"'"}esperienza dei tuoi dipendenti e creare valore misurabile per la tua azienda.
+            Scopri come Townly trasforma il welfare in un centro di profitto, migliorando KPI aziendali e riducendo costi operativi legati a formazione e turnover.
           </p>
         </div>
         

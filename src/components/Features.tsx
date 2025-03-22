@@ -30,43 +30,43 @@ const Features = () => {
 
   const features = [
     {
-      title: 'Connessione Territoriale',
-      description: 'Crea un ponte tra aziende e territorio con un sistema personalizzabile che valorizza le iniziative locali.',
+      title: 'Integrazione Locale',
+      description: 'Accelera l\'adattamento dei dipendenti nel territorio, riducendo il turnover e aumentando la produttività con iniziative locali mirate.',
       icon: Building,
       color: 'text-townly-orange bg-townly-orange/10',
       delay: 100
     },
     {
-      title: 'Networking Professionale',
-      description: 'Partecipa a eventi esclusivi su temi business, amplia la tua rete di contatti e scopri nuove opportunità.',
+      title: 'Networking Strategico',
+      description: 'Trasforma le relazioni in valore aziendale: eventi esclusivi e connessioni qualificate che potenziano il brand e creano opportunità di business.',
       icon: Users,
       color: 'text-blue-500 bg-blue-500/10',
       delay: 200
     },
     {
-      title: 'Formazione Continua',
-      description: 'Accedi a corsi online e offline su temi attuali e rilevanti per la tua crescita professionale e personale.',
+      title: 'Formazione a Costi Ridotti',
+      description: 'Abbatti i costi di formazione del 30% con corsi mirati online e offline che ottimizzano il budget mantenendo alta la qualità dell\'apprendimento.',
       icon: BookOpen,
       color: 'text-green-500 bg-green-500/10',
       delay: 300
     },
     {
-      title: 'Benessere Integrato',
-      description: "Migliora la qualità della vita lavorativa integrando welfare e opportunità locali in un'unica piattaforma.",
+      title: 'Obiettivi ESG Misurabili',
+      description: "Raggiungi target ESG concreti attraverso iniziative di welfare che migliorano benessere, inclusione e impatto sociale con KPI facilmente rendicontabili.",
       icon: Heart,
       color: 'text-pink-500 bg-pink-500/10',
       delay: 400
     },
     {
-      title: 'Eventi Esclusivi',
-      description: 'Partecipa a eventi aziendali e territoriali selezionati per rafforzare cultura aziendale e appartenenza.',
+      title: 'Retention dei Talenti',
+      description: 'Fidelizza i migliori talenti offrendo un\'esperienza lavorativa completa che va oltre lo stipendio, con eventi personalizzati e opportunità esclusive.',
       icon: Calendar,
       color: 'text-purple-500 bg-purple-500/10',
       delay: 500
     },
     {
-      title: 'Community Dedicata',
-      description: 'Entra in una vera community con chat dedicata, condividi esperienze e crea connessioni significative.',
+      title: 'Community Aziendale',
+      description: 'Costruisci una cultura aziendale solida con una piattaforma di comunicazione dedicata che riduce il siloing e potenzia la collaborazione.',
       icon: MessageCircle,
       color: 'text-cyan-500 bg-cyan-500/10',
       delay: 600
@@ -79,11 +79,11 @@ const Features = () => {
       <div className="section-container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
           <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
-            Come Funziona
+            Vantaggi Aziendali
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Il ponte tra aziende, dipendenti e territorio</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Trasforma il welfare in vantaggio competitivo</h2>
           <p className="text-lg text-gray-600">
-            Townly crea valore connettendo i programmi di welfare aziendale con opportunità locali e iniziative che fanno la differenza.
+            Townly ottimizza l'investimento in persone, combinando welfare, formazione e networking in un'unica soluzione che migliora KPI aziendali e obiettivi ESG.
           </p>
         </div>
         
@@ -108,18 +108,18 @@ const Features = () => {
         
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center reveal-on-scroll" style={{ transitionDelay: '700ms' }}>
           <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold">Vantaggi concreti per la tua azienda</h3>
+            <h3 className="text-2xl md:text-3xl font-bold">ROI misurabile del welfare aziendale</h3>
             <p className="text-gray-600 text-lg">
-              Non solo welfare, ma uno strumento strategico che migliora l'ambiente lavorativo e crea un impatto positivo misurabile.
+              Townly non è solo un programma di welfare, ma un investimento strategico con ritorni tangibili su costi, reputazione e competitività.
             </p>
             <ul className="space-y-4">
               {[
-                'Attrazione e fidelizzazione dei migliori talenti',
-                'Community aziendale più coesa e motivata',
-                'Miglioramento della reputazione e visibilità',
-                'Semplificazione della rendicontazione ESG',
-                'Riduzione del turnover e dei costi di formazione',
-                'Networking professionale di qualità'
+                'Riduzione fino al 25% dei costi di onboarding',
+                'Diminuzione del 20% del turnover annuale',
+                'Risparmio del 30% sui budget di formazione tradizionale',
+                'Accelerazione della rendicontazione ESG con dati automatizzati',
+                'Aumento del 40% nell\'engagement dei dipendenti',
+                'Miglioramento dell\'employer branding e talent attraction'
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <div className="flex-shrink-0 w-6 h-6 bg-townly-orange rounded-full flex items-center justify-center mt-1">

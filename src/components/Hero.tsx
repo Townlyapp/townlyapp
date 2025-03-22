@@ -19,20 +19,20 @@ const Hero = () => {
             <div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
-                Connetti aziende, dipendenti e <span className="text-townly-orange">territorio</span>
+                Ottimizza costi ed <span className="text-townly-orange">ESG</span> con il welfare integrato
               </h1>
               <p className="mt-6 text-lg text-gray-700 md:text-xl max-w-xl">
-                Trasforma il welfare aziendale in un'esperienza dinamica e integrata. Crea valore condiviso, aumenta il benessere e rafforza il legame con il territorio.
+                Riduci il turnover, taglia i costi di formazione e raggiungi i tuoi obiettivi ESG attraverso un'esperienza integrata che connette dipendenti, azienda e territorio.
               </p>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact" className="inline-flex items-center justify-center px-6 py-3 bg-townly-orange text-white font-medium rounded-lg hover:bg-townly-orangeDark transition duration-300 ease-in-out hover-glow">
-                Scopri di più
+                Scopri il ROI
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
               <a href="#benefits" className="inline-flex items-center justify-center px-6 py-3 bg-white text-townly-orange font-medium rounded-lg border border-townly-orange/30 hover:bg-townly-orange/5 transition duration-300 ease-in-out">
-                Vantaggi
+                Vantaggi Aziendali
               </a>
             </div>
           </div>
