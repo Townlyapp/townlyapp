@@ -1,6 +1,8 @@
+
 import { Phone, Mail, MapPin } from 'lucide-react';
 import BlurContainer from './ui/BlurContainer';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
+
 const TeamMember = ({
   name,
   role,
@@ -21,6 +23,7 @@ const TeamMember = ({
     <h4 className="text-lg font-semibold">{name}</h4>
     <p className="text-gray-600">{role}</p>
   </div>;
+
 const ContactForm = () => {
   return <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 bg-gray-50 opacity-50"></div>
@@ -70,18 +73,15 @@ const ContactForm = () => {
               
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-              <TeamMember name="Marco Rossi" role="CEO & Founder" imgSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="MR" />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
+              <TeamMember name="Iuliana" role="Co-Founder" imgSrc="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="I" />
               
-              <TeamMember name="Laura Bianchi" role="COO" imgSrc="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="LB" />
-              
-              <TeamMember name="Andrea Verdi" role="CTO" imgSrc="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="AV" />
-              
-              <TeamMember name="Sofia Neri" role="CMO" imgSrc="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="SN" />
+              <TeamMember name="Christian" role="Co-Founder" imgSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="C" />
             </div>
           </div>
         </div>
       </div>
     </section>;
 };
+
 export default ContactForm;
