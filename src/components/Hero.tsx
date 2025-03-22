@@ -4,8 +4,15 @@ import BlurContainer from './ui/BlurContainer';
 
 const Hero = () => {
   return <section id="home" className="relative pt-20 pb-16 md:py-32 overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-orange-50 to-white opacity-70"></div>
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img 
+          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=2000" 
+          alt="Business team" 
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-white via-orange-50 to-white opacity-80"></div>
+      </div>
       
       {/* Decorative elements */}
       <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-townly-orange opacity-5 rounded-full blur-3xl animate-float"></div>
@@ -19,10 +26,10 @@ const Hero = () => {
             <div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
-                Ottimizza costi ed <span className="text-townly-orange">ESG</span> con il welfare integrato
+                Welfare integrato per <span className="text-townly-orange">risultati concreti</span>
               </h1>
               <p className="mt-6 text-lg text-gray-700 md:text-xl max-w-xl">
-                Riduci il turnover, taglia i costi di formazione e raggiungi i tuoi obiettivi ESG attraverso un'esperienza integrata che connette dipendenti, azienda e territorio.
+                Riduci costi, migliora i KPI aziendali e raggiungi obiettivi ESG attraverso un'esperienza che connette dipendenti, azienda e territorio.
               </p>
             </div>
             

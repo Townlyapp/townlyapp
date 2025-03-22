@@ -29,7 +29,7 @@ const InfoSections = () => {
     {
       id: 'home',
       title: 'Radicamento Locale',
-      description: "Riduci i tempi di adattamento dei nuovi assunti con un sistema strutturato di integrazione locale. I dipendenti soddisfatti sono 3 volte più produttivi e hanno il 70% in meno di probabilità di cercare nuove opportunità.",
+      description: "Riduci i tempi di adattamento dei nuovi assunti con un sistema strutturato di integrazione locale. I dipendenti soddisfatti sono più produttivi e hanno meno probabilità di cercare nuove opportunità.",
       icon: Home,
       color: 'text-townly-orange bg-townly-orange/10',
       imageSrc: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -39,7 +39,7 @@ const InfoSections = () => {
     {
       id: 'community',
       title: 'Formazione Ottimizzata',
-      description: "Taglia i costi di formazione tradizionale fino al 30% con un mix strategico di training online e offline. Eventi formativi mirati che trasformano l'apprendimento in vantaggio competitivo misurabile con analytics di engagement.",
+      description: "Taglia i costi di formazione tradizionale con un mix strategico di training online e offline. Eventi formativi mirati che trasformano l'apprendimento in vantaggio competitivo misurabile con analytics di engagement.",
       icon: LineChart,
       color: 'text-blue-600 bg-blue-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',

@@ -44,8 +44,8 @@ const Features = () => {
       delay: 200
     },
     {
-      title: 'Formazione a Costi Ridotti',
-      description: 'Abbatti i costi di formazione del 30% con corsi mirati online e offline che ottimizzano il budget mantenendo alta la qualità dell\'apprendimento.',
+      title: 'Formazione Ottimizzata',
+      description: 'Abbatti i costi di formazione con un mix strategico di corsi mirati online e offline che ottimizzano il budget mantenendo alta la qualità dell\'apprendimento.',
       icon: BookOpen,
       color: 'text-green-500 bg-green-500/10',
       delay: 300
@@ -114,11 +114,11 @@ const Features = () => {
             </p>
             <ul className="space-y-4">
               {[
-                'Riduzione fino al 25% dei costi di onboarding',
-                'Diminuzione del 20% del turnover annuale',
-                'Risparmio del 30% sui budget di formazione tradizionale',
+                'Riduzione dei costi di onboarding',
+                'Diminuzione significativa del turnover annuale',
+                'Risparmio sui budget di formazione tradizionale',
                 'Accelerazione della rendicontazione ESG con dati automatizzati',
-                'Aumento del 40% nell\'engagement dei dipendenti',
+                'Aumento nell\'engagement dei dipendenti',
                 'Miglioramento dell\'employer branding e talent attraction'
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
