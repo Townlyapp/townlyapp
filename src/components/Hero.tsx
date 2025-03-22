@@ -1,5 +1,7 @@
+
 import { ArrowRight } from 'lucide-react';
 import BlurContainer from './ui/BlurContainer';
+
 const Hero = () => {
   return <section id="home" className="relative pt-20 pb-16 md:py-32 overflow-hidden">
       {/* Background gradient */}
@@ -20,7 +22,7 @@ const Hero = () => {
                 Connetti aziende, dipendenti e <span className="text-townly-orange">territorio</span>
               </h1>
               <p className="mt-6 text-lg text-gray-700 md:text-xl max-w-xl">
-                La piattaforma che trasforma il welfare aziendale in un'esperienza integrata con il territorio, creando valore condiviso e benessere diffuso.
+                Trasforma il welfare aziendale in un'esperienza dinamica e integrata. Crea valore condiviso, aumenta il benessere e rafforza il legame con il territorio.
               </p>
             </div>
             

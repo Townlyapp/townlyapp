@@ -1,5 +1,5 @@
 
-import { Check, Building, Users, Store, Heart, Calendar, LineChart } from 'lucide-react';
+import { Check, Building, Users, Store, Heart, Calendar, LineChart, BookOpen, MessageCircle } from 'lucide-react';
 import BlurContainer from './ui/BlurContainer';
 import { cn } from '@/lib/utils';
 import { useEffect, useRef } from 'react';
@@ -31,43 +31,43 @@ const Features = () => {
   const features = [
     {
       title: 'Connessione Territoriale',
-      description: 'Crea un ponte tra le aziende e le iniziative locali attraverso un sistema integrato e personalizzabile.',
+      description: 'Crea un ponte tra aziende e territorio con un sistema personalizzabile che valorizza le iniziative locali.',
       icon: Building,
       color: 'text-townly-orange bg-townly-orange/10',
       delay: 100
     },
     {
-      title: 'Coinvolgimento dei Dipendenti',
-      description: 'Favorisci la partecipazione attiva degli impiegati e rafforza il senso di appartenenza alla comunità.',
+      title: 'Networking Professionale',
+      description: 'Partecipa a eventi esclusivi su temi business, amplia la tua rete di contatti e scopri nuove opportunità.',
       icon: Users,
       color: 'text-blue-500 bg-blue-500/10',
       delay: 200
     },
     {
-      title: 'Supporto alle Attività Locali',
-      description: 'Valorizza il tessuto economico locale promuovendo collaborazioni tra aziende e realtà del territorio.',
-      icon: Store,
+      title: 'Formazione Continua',
+      description: 'Accedi a corsi online e offline su temi attuali e rilevanti per la tua crescita professionale e personale.',
+      icon: BookOpen,
       color: 'text-green-500 bg-green-500/10',
       delay: 300
     },
     {
       title: 'Benessere Integrato',
-      description: 'Migliora la qualità della vita lavorativa integrando iniziative di welfare con le opportunità territoriali.',
+      description: 'Migliora la qualità della vita lavorativa integrando welfare e opportunità locali in un'unica piattaforma.',
       icon: Heart,
       color: 'text-pink-500 bg-pink-500/10',
       delay: 400
     },
     {
-      title: 'Eventi e Iniziative',
-      description: 'Organizza e promuovi eventi aziendali in connessione con il territorio per rafforzare la cultura aziendale.',
+      title: 'Eventi Esclusivi',
+      description: 'Partecipa a eventi aziendali e territoriali selezionati per rafforzare cultura aziendale e appartenenza.',
       icon: Calendar,
       color: 'text-purple-500 bg-purple-500/10',
       delay: 500
     },
     {
-      title: 'Analisi e Report',
-      description: 'Monitora l\'impatto delle iniziative con dati e metriche dettagliate per ottimizzare le strategie.',
-      icon: LineChart,
+      title: 'Community Dedicata',
+      description: 'Entra in una vera community con chat dedicata, condividi esperienze e crea connessioni significative.',
+      icon: MessageCircle,
       color: 'text-cyan-500 bg-cyan-500/10',
       delay: 600
     }
@@ -83,7 +83,7 @@ const Features = () => {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Il ponte tra aziende, dipendenti e territorio</h2>
           <p className="text-lg text-gray-600">
-            Townly crea valore connettendo i programmi di welfare aziendale con le opportunità locali e le iniziative territoriali.
+            Townly crea valore connettendo i programmi di welfare aziendale con opportunità locali e iniziative che fanno la differenza.
           </p>
         </div>
         
@@ -108,18 +108,18 @@ const Features = () => {
         
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center reveal-on-scroll" style={{ transitionDelay: '700ms' }}>
           <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold">I principali vantaggi per le aziende</h3>
+            <h3 className="text-2xl md:text-3xl font-bold">Vantaggi concreti per la tua azienda</h3>
             <p className="text-gray-600 text-lg">
-              Townly trasforma il welfare aziendale in un potente strumento di connessione con il territorio, creando valore per tutti gli stakeholder coinvolti.
+              Non solo welfare, ma uno strumento strategico che migliora l'ambiente lavorativo e crea un impatto positivo misurabile.
             </p>
             <ul className="space-y-4">
               {[
-                'Maggiore attrattività per i talenti',
-                'Riduzione del turnover e maggiore retention',
-                'Miglioramento della cultura aziendale',
-                'Rafforzamento dell\'immagine e della reputazione',
-                'Supporto alla rendicontazione ESG',
-                'Impatto positivo sul territorio'
+                'Attrazione e fidelizzazione dei migliori talenti',
+                'Community aziendale più coesa e motivata',
+                'Miglioramento della reputazione e visibilità',
+                'Semplificazione della rendicontazione ESG',
+                'Riduzione del turnover e dei costi di formazione',
+                'Networking professionale di qualità'
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <div className="flex-shrink-0 w-6 h-6 bg-townly-orange rounded-full flex items-center justify-center mt-1">
