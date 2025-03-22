@@ -24,10 +24,10 @@ const Hero = () => {
             <div>
               
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
-                Welfare integrato per <span className="text-townly-orange">risultati concreti</span>
+                Diamo valore al <span className="text-townly-orange">tempo</span> fuori dall'ufficio
               </h1>
               <p className="mt-6 text-lg text-gray-700 md:text-xl max-w-xl">
-                Riduci costi, migliora i KPI aziendali e raggiungi obiettivi ESG attraverso un'esperienza che connette dipendenti, azienda e territorio.
+                Con Townly, ogni dipendente si integra facilmente nella città grazie a formazione, eventi culturali e networking. L’azienda migliora il work-life balance, rafforza la cultura aziendale e supporta la reportistica ESG.
               </p>
             </div>
             

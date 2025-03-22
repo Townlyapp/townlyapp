@@ -135,7 +135,7 @@ const Features = () => {
             <BlurContainer className="p-0 overflow-hidden aspect-video">
               <div className="absolute inset-0 bg-gradient-to-br from-townly-orange/10 to-transparent"></div>
               <img 
-                src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024" 
+                src="./networking.jpeg"
                 alt="Team meeting" 
                 className="object-cover w-full h-full rounded-2xl"
               />
