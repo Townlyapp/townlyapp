@@ -55,19 +55,19 @@ const ContactForm = () => {
               <BlurContainer className="p-8 hover-lift">
                 <Mail className="h-10 w-10 text-townly-orange mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <a href="mailto:info@townly.it" className="text-townly-orange hover:underline">info@townly.it</a>
+                <a href="mailto:townlyapp@gmail.com" className="text-townly-orange hover:underline">townlyapp@gmail.com</a>
               </BlurContainer>
               
               <BlurContainer className="p-8 hover-lift">
                 <Phone className="h-10 w-10 text-townly-orange mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Telefono</h3>
-                <a href="tel:+390212345678" className="text-townly-orange hover:underline">+39 02 1234567</a>
+                <a href="tel:+393339344331" className="text-townly-orange hover:underline">+39 333 9344331</a>
               </BlurContainer>
               
               <BlurContainer className="p-8 hover-lift">
                 <MapPin className="h-10 w-10 text-townly-orange mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Sede</h3>
-                <p className="text-gray-600">Via del Territorio, 42<br />20123 Milano, Italia</p>
+                <p className="text-gray-600">Via Ruffini, 94<br />41124 Modena (MO), Italia</p>
               </BlurContainer>
             </div>
           </div>

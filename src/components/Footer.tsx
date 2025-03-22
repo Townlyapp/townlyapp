@@ -18,7 +18,7 @@ const Footer = () => {
         
         <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-center items-center">
           <p className="text-gray-500 text-sm">
-            &copy; {currentYear} Townly. Tutti i diritti riservati.
+            &copy; {currentYear} Townly. P.IVA 04133580367. Tutti i diritti riservati.
           </p>
           <div className="mt-4 md:mt-0 md:ml-6">
             <a href="#" className="text-gray-500 hover:text-townly-orange transition-colors duration-200 text-sm">
