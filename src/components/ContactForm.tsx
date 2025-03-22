@@ -1,26 +1,28 @@
-
 import { Phone, Mail, MapPin } from 'lucide-react';
 import BlurContainer from './ui/BlurContainer';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
-
-const TeamMember = ({ name, role, imgSrc, initials }: { name: string; role: string; imgSrc?: string; initials: string }) => (
-  <div className="flex flex-col items-center text-center">
+const TeamMember = ({
+  name,
+  role,
+  imgSrc,
+  initials
+}: {
+  name: string;
+  role: string;
+  imgSrc?: string;
+  initials: string;
+}) => <div className="flex flex-col items-center text-center">
     <Avatar className="h-24 w-24 mb-4">
-      {imgSrc ? (
-        <AvatarImage src={imgSrc} alt={name} />
-      ) : null}
+      {imgSrc ? <AvatarImage src={imgSrc} alt={name} /> : null}
       <AvatarFallback className="bg-townly-orange/10 text-townly-orange text-xl font-semibold">
         {initials}
       </AvatarFallback>
     </Avatar>
     <h4 className="text-lg font-semibold">{name}</h4>
     <p className="text-gray-600">{role}</p>
-  </div>
-);
-
+  </div>;
 const ContactForm = () => {
-  return (
-    <section id="contact" className="py-24 relative">
+  return <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 bg-gray-50 opacity-50"></div>
       <div className="absolute top-1/3 right-1/4 w-64 h-64 bg-townly-orange opacity-5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-1/3 left-1/4 w-72 h-72 bg-townly-orangeLight opacity-5 rounded-full blur-3xl"></div>
@@ -65,45 +67,21 @@ const ContactForm = () => {
                 Il Nostro Team
               </span>
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Le persone dietro Townly</h2>
-              <p className="text-lg text-gray-600">
-                Un team di professionisti appassionati, esperti in welfare aziendale, tecnologia e sviluppo territoriale.
-              </p>
+              
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
-              <TeamMember 
-                name="Marco Rossi" 
-                role="CEO & Founder" 
-                imgSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400"
-                initials="MR" 
-              />
+              <TeamMember name="Marco Rossi" role="CEO & Founder" imgSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="MR" />
               
-              <TeamMember 
-                name="Laura Bianchi" 
-                role="COO" 
-                imgSrc="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400"
-                initials="LB" 
-              />
+              <TeamMember name="Laura Bianchi" role="COO" imgSrc="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="LB" />
               
-              <TeamMember 
-                name="Andrea Verdi" 
-                role="CTO" 
-                imgSrc="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400"
-                initials="AV" 
-              />
+              <TeamMember name="Andrea Verdi" role="CTO" imgSrc="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="AV" />
               
-              <TeamMember 
-                name="Sofia Neri" 
-                role="CMO" 
-                imgSrc="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400"
-                initials="SN" 
-              />
+              <TeamMember name="Sofia Neri" role="CMO" imgSrc="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="SN" />
             </div>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default ContactForm;
