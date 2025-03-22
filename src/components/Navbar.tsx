@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'Vantaggi', href: '#about' },
     { name: 'Soluzioni', href: '#solutions' },
+    { name: 'Demo', href: '#app-demo' },
     { name: 'Contattaci', href: '#contact' },
   ];
 

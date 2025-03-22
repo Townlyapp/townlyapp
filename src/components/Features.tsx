@@ -77,7 +77,7 @@ const Features = () => {
     <section id="about" className="py-24 relative" ref={sectionRef}>
       <div className="absolute inset-0 bg-gray-50 opacity-50"></div>
       <div className="section-container relative z-10">
-        <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
+        <div className="text-center max-w-3xl mx-auto mb-32 reveal-on-scroll">
           <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
             Vantaggi Aziendali
           </span>
@@ -87,24 +87,7 @@ const Features = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <BlurContainer 
-              key={index} 
-              className={cn(
-                "p-8 hover-lift reveal-on-scroll", 
-                "transform translate-y-10"
-              )}
-              style={{ transitionDelay: `${feature.delay}ms` }}
-            >
-              <div className={cn("w-12 h-12 flex items-center justify-center rounded-lg mb-6", feature.color)}>
-                <feature.icon size={24} />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
-            </BlurContainer>
-          ))}
-        </div>
+        
         
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center reveal-on-scroll" style={{ transitionDelay: '700ms' }}>
           <div className="space-y-6">
