@@ -15,9 +15,7 @@ const Hero = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-8 animate-fade-in">
             <div>
-              <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
-                Welfare Aziendale Territoriale
-              </span>
+              
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
                 Connetti aziende, dipendenti e <span className="text-townly-orange">territorio</span>
               </h1>
