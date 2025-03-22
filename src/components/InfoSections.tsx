@@ -29,7 +29,7 @@ const InfoSections = () => {
     {
       id: 'home',
       title: 'Sentirsi a casa',
-      description: 'Facciamo sentire i tuoi talenti subito a casa, con una piattaforma che li connette alla città, agli eventi locali e alla community aziendale. Un dipendente più coinvolto è un dipendente più produttivo.',
+      description: "Facciamo sentire i tuoi talenti subito a casa, con una piattaforma che li connette alla città, agli eventi locali e alla community aziendale. Un dipendente più coinvolto è un dipendente più produttivo.",
       icon: Home,
       color: 'text-townly-orange bg-townly-orange/10',
       imageSrc: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -39,7 +39,7 @@ const InfoSections = () => {
     {
       id: 'community',
       title: 'Community locale',
-      description: 'Misuriamo l'impatto delle iniziative aziendali con dati chiari su partecipazione ed engagement. Offriamo report dettagliati per ottimizzare le strategie di welfare, migliorare la cultura aziendale e semplificare la rendicontazione ESG.',
+      description: "Misuriamo l'impatto delle iniziative aziendali con dati chiari su partecipazione ed engagement. Offriamo report dettagliati per ottimizzare le strategie di welfare, migliorare la cultura aziendale e semplificare la rendicontazione ESG.",
       icon: Users,
       color: 'text-blue-600 bg-blue-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -49,7 +49,7 @@ const InfoSections = () => {
     {
       id: 'ambiente',
       title: 'Ambiente positivo',
-      description: 'Rafforziamo l'attrattività della tua azienda, dimostrando attenzione al benessere e riducendo il turnover. Un ambiente di lavoro positivo è la chiave per trattenere i migliori talenti.',
+      description: "Rafforziamo l'attrattività della tua azienda, dimostrando attenzione al benessere e riducendo il turnover. Un ambiente di lavoro positivo è la chiave per trattenere i migliori talenti.",
       icon: Smile,
       color: 'text-green-600 bg-green-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -68,7 +68,7 @@ const InfoSections = () => {
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Trasformiamo il welfare aziendale</h2>
           <p className="text-lg text-gray-600">
-            Scopri come Townly può migliorare l'esperienza dei tuoi dipendenti e creare valore per la tua azienda.
+            Scopri come Townly può migliorare l{"'"}esperienza dei tuoi dipendenti e creare valore per la tua azienda.
           </p>
         </div>
         
