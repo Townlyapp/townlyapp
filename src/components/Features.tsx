@@ -52,7 +52,7 @@ const Features = () => {
     },
     {
       title: 'Benessere Integrato',
-      description: 'Migliora la qualità della vita lavorativa integrando welfare e opportunità locali in un'unica piattaforma.',
+      description: "Migliora la qualità della vita lavorativa integrando welfare e opportunità locali in un'unica piattaforma.",
       icon: Heart,
       color: 'text-pink-500 bg-pink-500/10',
       delay: 400
