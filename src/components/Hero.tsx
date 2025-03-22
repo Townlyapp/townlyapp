@@ -1,17 +1,15 @@
 
 import { ArrowRight } from 'lucide-react';
-import BlurContainer from './ui/BlurContainer';
 
 const Hero = () => {
   return <section id="home" className="relative pt-20 pb-16 md:py-32 overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=2000" 
+          src="./bg.png" 
           alt="Business team" 
           className="w-full h-full object-cover opacity-20"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-orange-50 to-white opacity-80"></div>
       </div>
       
       {/* Decorative elements */}

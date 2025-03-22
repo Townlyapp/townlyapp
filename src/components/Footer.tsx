@@ -93,7 +93,7 @@ const Footer = () => {
           </p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="text-gray-500 hover:text-townly-orange transition-colors duration-200 text-sm">
-              Made with <span className="text-townly-orange">♥</span> in Italia
+              Made with <span className="text-townly-orange">♥</span> by Webion
             </a>
           </div>
         </div>

@@ -65,7 +65,7 @@ const AppDemo = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-2 lg:grid-cols-2 gap-12 items-center reveal-on-scroll">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal-on-scroll">
           {/* iFrame App Preview */}
           <div className="order-2 lg:order-1 animate-fade-in-left delay-200">
             <BlurContainer className="p-2 overflow-hidden rounded-3xl mx-auto max-w-[320px]">
@@ -105,7 +105,7 @@ const AppDemo = () => {
               </div>
               
               <a href="#contact" className="inline-flex items-center text-townly-orange font-medium hover:underline mt-4">
-                Ottieni una demo personalizzata
+                Contattaci per saperne di più
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>

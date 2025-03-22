@@ -22,8 +22,7 @@ const Navbar = () => {
 
   const menuItems = [
     { name: 'Home', href: '#home' },
-    { name: 'Chi Siamo', href: '#about' },
-    { name: 'Vantaggi', href: '#benefits' },
+    { name: 'Vantaggi', href: '#about' },
     { name: 'Soluzioni', href: '#solutions' },
     { name: 'Contattaci', href: '#contact' },
   ];
@@ -39,7 +38,11 @@ const Navbar = () => {
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center gap-2">
-              <span className="text-townly-orange text-2xl font-bold">Townly</span>
+              <img
+                src="/logo.png"
+                alt="Townly"
+                className='h-14 w-auto'
+              />
             </a>
           </div>
           
@@ -54,12 +57,7 @@ const Navbar = () => {
                   {item.name}
                 </a>
               ))}
-              <a
-                href="#contact"
-                className="bg-townly-orange text-white px-4 py-2 rounded-lg font-medium hover:bg-townly-orangeDark transition-colors duration-200"
-              >
-                Inizia Ora
-              </a>
+           
             </div>
           </div>
           

@@ -7,12 +7,14 @@ const TeamMember = ({
   name,
   role,
   imgSrc,
-  initials
+  initials,
+  linkedin
 }: {
   name: string;
   role: string;
   imgSrc?: string;
   initials: string;
+  linkedin?: string;
 }) => <div className="flex flex-col items-center text-center">
     <Avatar className="h-24 w-24 mb-4">
       {imgSrc ? <AvatarImage src={imgSrc} alt={name} /> : null}
@@ -22,6 +24,13 @@ const TeamMember = ({
     </Avatar>
     <h4 className="text-lg font-semibold">{name}</h4>
     <p className="text-gray-600">{role}</p>
+    <a 
+      href={linkedin}
+      target='_blank'
+      className="text-townly-orange hover:underline"
+    >
+        LinkedIn
+    </a>
   </div>;
 
 const ContactForm = () => {
@@ -74,9 +83,9 @@ const ContactForm = () => {
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
-              <TeamMember name="Iuliana" role="Co-Founder" imgSrc="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="I" />
+              <TeamMember name="Iuliana Lupascu" role="Co-Founder" imgSrc="./iuliana.jpeg" initials="I" linkedin='https://www.linkedin.com/in/iuliana-lupascu-3b49591a2/' />
               
-              <TeamMember name="Christian" role="Co-Founder" imgSrc="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=400&h=400" initials="C" />
+              <TeamMember name="Cristian Bignardi" role="Co-Founder" imgSrc="./cristian.jpeg" initials="C" linkedin='https://www.linkedin.com/in/cristian-bignardi-658a00a3/'/>
             </div>
           </div>
         </div>
