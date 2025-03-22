@@ -66,7 +66,7 @@ const Features = () => {
     },
     {
       title: 'Community Aziendale',
-      description: 'Costruisci una cultura aziendale solida con una piattaforma di comunicazione dedicata che riduce il siloing e potenzia la collaborazione.',
+      description: 'Costruisci una cultura aziendale solida con una piattaforma di comunicazione dedicata che potenzia la collaborazione.',
       icon: MessageCircle,
       color: 'text-cyan-500 bg-cyan-500/10',
       delay: 600
