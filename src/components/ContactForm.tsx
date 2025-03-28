@@ -1,4 +1,3 @@
-
 import { Phone, Mail, MapPin } from 'lucide-react';
 import BlurContainer from './ui/BlurContainer';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
@@ -41,7 +40,6 @@ const ContactForm = () => {
       
       <div className="section-container relative z-10">
         <div className="grid grid-cols-1 gap-20">
-          {/* Contact Information */}
           <div className="text-center max-w-3xl mx-auto reveal-on-scroll">
             <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
               Contattaci
@@ -61,7 +59,7 @@ const ContactForm = () => {
               <BlurContainer className="p-8 hover-lift">
                 <Phone className="h-10 w-10 text-townly-orange mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Telefono</h3>
-                <a href="tel:+393339344331" className="text-townly-orange hover:underline">+39 333 9344331</a>
+                <a href="tel:+393514567890" className="text-townly-orange hover:underline">+39 351 4567890</a>
               </BlurContainer>
               
               <BlurContainer className="p-8 hover-lift">
@@ -72,7 +70,6 @@ const ContactForm = () => {
             </div>
           </div>
           
-          {/* Team Section */}
           <div className="reveal-on-scroll">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
