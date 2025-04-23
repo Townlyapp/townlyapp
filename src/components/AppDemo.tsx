@@ -29,23 +29,19 @@ const AppDemo = () => {
   const screens = [
     {
       title: "Esplora e Partecipa",
-      description: "Scopri eventi, formazioni e iniziative che arricchiscono la tua esperienza professionale e personale.",
-      image: "https://images.unsplash.com/photo-1565728744382-61accd4aa148?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=600&h=1200"
+      description: "Scopri eventi, formazioni e iniziative che arricchiscono la tua esperienza professionale e personale."
     }, 
     {
       title: "Community Attiva",
-      description: "Entra in contatto con colleghi e professionisti, scambia idee e costruisci relazioni significative.",
-      image: "https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=600&h=1200"
+      description: "Entra in contatto con colleghi e professionisti, scambia idee e costruisci relazioni significative."
     }, 
     {
       title: "Formazione Continua",
-      description: "Accedi a corsi online e offline su temi attuali per la tua crescita professionale e personale.",
-      image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=600&h=1200"
+      description: "Accedi a corsi online e offline su temi attuali per la tua crescita professionale e personale."
     }, 
     {
       title: "Impatto Misurabile",
-      description: "Visualizza metriche e analisi che mostrano il valore concreto delle tue partecipazioni.",
-      image: "https://images.unsplash.com/photo-1493397212122-2b85dda8106b?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=600&h=1200"
+      description: "Visualizza metriche e analisi che mostrano il valore concreto delle tue partecipazioni."
     }
   ];
 
@@ -64,14 +60,9 @@ const AppDemo = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal-on-scroll">
-          {/* Removed iframe, keeping the grid layout */}
           <div className="order-2 lg:order-1 animate-fade-in-left delay-200">
             <BlurContainer className="p-2 overflow-hidden rounded-3xl mx-auto max-w-[320px]">
-              <img 
-                src={screens[activeScreen].image} 
-                alt={screens[activeScreen].title} 
-                className="w-full h-full object-cover rounded-2xl"
-              />
+              {/* Intentionally left empty as per user request */}
             </BlurContainer>
           </div>
           
