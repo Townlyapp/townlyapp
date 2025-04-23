@@ -105,7 +105,7 @@ const AppDemo = () => {
               </div>
               
               <a href="#contact" className="inline-flex items-center text-townly-orange font-medium hover:underline mt-4">
-                Contattaci per saperne di più
+                Richiedi una Demo
                 <ArrowRight className="ml-2 h-4 w-4" />
               </a>
             </div>
