@@ -1,7 +1,5 @@
-
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import BlurContainer from "./ui/BlurContainer";
 import { cn } from "@/lib/utils";
 
@@ -66,12 +64,14 @@ const AppDemo = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal-on-scroll">
-          {/* iFrame App Preview */}
+          {/* Removed iframe, keeping the grid layout */}
           <div className="order-2 lg:order-1 animate-fade-in-left delay-200">
             <BlurContainer className="p-2 overflow-hidden rounded-3xl mx-auto max-w-[320px]">
-              <div className="aspect-[9/19] w-full h-full">
-                <iframe src="https://preview--townly.lovable.app" title="Townly App Preview" className="w-full h-full border-0 rounded-2xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-              </div>
+              <img 
+                src={screens[activeScreen].image} 
+                alt={screens[activeScreen].title} 
+                className="w-full h-full object-cover rounded-2xl"
+              />
             </BlurContainer>
           </div>
           
