@@ -1,7 +1,7 @@
 
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
-import BlurContainer from "./ui/BlurContainer";
+import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 
 const AppDemo = () => {
@@ -61,11 +61,16 @@ const AppDemo = () => {
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal-on-scroll">
-          <div className="order-2 lg:order-1 animate-fade-in-left delay-200">
-            <BlurContainer className="p-2 overflow-hidden rounded-3xl mx-auto max-w-[320px]">
-              {/* This empty div solves the children prop requirement */}
-              <div></div>
-            </BlurContainer>
+          <div className="order-2 lg:order-1 animate-fade-in-left delay-200 flex justify-center">
+            <a href="#contact">
+              <Button 
+                size="lg"
+                className="text-lg px-8 py-6 h-auto bg-townly-orange hover:bg-townly-orangeDark transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              >
+                Vuoi vedere la demo? Scrivici!
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </a>
           </div>
           
           {/* App Features */}
@@ -110,3 +115,4 @@ const AppDemo = () => {
 };
 
 export default AppDemo;
+
