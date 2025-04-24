@@ -1,4 +1,3 @@
-
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "./ui/button";
@@ -101,11 +100,6 @@ const AppDemo = () => {
                   </div>
                 ))}
               </div>
-              
-              <a href="#contact" className="inline-flex items-center text-townly-orange font-medium hover:underline mt-4">
-                Richiedi una Demo
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
             </div>
           </div>
         </div>
@@ -115,4 +109,3 @@ const AppDemo = () => {
 };
 
 export default AppDemo;
-
