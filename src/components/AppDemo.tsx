@@ -1,3 +1,4 @@
+
 import { ArrowRight } from "lucide-react";
 import { useEffect, useState } from "react";
 import BlurContainer from "./ui/BlurContainer";
@@ -62,7 +63,8 @@ const AppDemo = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal-on-scroll">
           <div className="order-2 lg:order-1 animate-fade-in-left delay-200">
             <BlurContainer className="p-2 overflow-hidden rounded-3xl mx-auto max-w-[320px]">
-              {/* Intentionally left empty as per user request */}
+              {/* This empty div solves the children prop requirement */}
+              <div></div>
             </BlurContainer>
           </div>
           
