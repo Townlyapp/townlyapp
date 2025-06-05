@@ -53,7 +53,7 @@ const ContactForm = () => {
               <BlurContainer className="p-8 hover-lift">
                 <Mail className="h-10 w-10 text-townly-orange mx-auto mb-4" />
                 <h3 className="text-xl font-semibold mb-2">Email</h3>
-                <a href="mailto:townlyapp@gmail.com" className="text-townly-orange hover:underline">townlyapp@gmail.com</a>
+                <a href="mailto:info@townlyapp.com" className="text-townly-orange hover:underline">info@townlyapp.com</a>
               </BlurContainer>
               
               <BlurContainer className="p-8 hover-lift">
