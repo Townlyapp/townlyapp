@@ -1,7 +1,7 @@
-
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import { Menu, X } from 'lucide-react';
+import { CartDrawer } from './CartDrawer';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,11 +21,11 @@ const Navbar = () => {
   }, []);
 
   const menuItems = [
-    { name: 'Home', href: '#home' },
-    { name: 'Vantaggi', href: '#about' },
-    { name: 'Soluzioni', href: '#solutions' },
-    { name: 'Demo', href: '#app-demo' },
-    { name: 'Contattaci', href: '#contact' },
+    { name: 'Home', href: '/' },
+    { name: 'Esperienze', href: '/esperienze' },
+    { name: 'Magazine', href: '/magazine' },
+    { name: 'Chi Siamo', href: '/chi-siamo' },
+    { name: 'Contatti', href: '/#contact' },
   ];
 
   return (
@@ -38,13 +38,17 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2">
               <img
                 src="/logo.png"
                 alt="Townly"
                 className='h-14 w-auto'
               />
             </a>
+          </div>
+          
+          <div className="hidden md:flex items-center ml-auto mr-4">
+            <CartDrawer />
           </div>
           
           <div className="hidden md:block">
