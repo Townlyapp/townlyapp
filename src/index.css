@@ -93,11 +93,15 @@
   }
 
   .glass-card {
-    @apply bg-white/80 backdrop-blur-md rounded-2xl shadow-lg border border-white/20;
+    @apply bg-white/90 backdrop-blur-xl rounded-3xl shadow-xl border border-white/30;
   }
 
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12; /* Reduced vertical padding from py-24 to py-12 */
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
   }
 
   .reveal-on-scroll {

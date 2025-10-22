@@ -42,11 +42,12 @@ const ContactForm = () => {
         <div className="grid grid-cols-1 gap-20">
           <div className="text-center max-w-3xl mx-auto reveal-on-scroll">
             <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
-              Contattaci
+              Parliamone
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8">Inizia il tuo percorso con Townly</h2>
-            <p className="text-lg text-gray-600 mb-12">
-              Siamo qui per aiutarti a trasformare il welfare aziendale in un'esperienza integrata con il territorio. Contattaci per scoprire come Townly può creare valore per la tua azienda.
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">Hai domande? Siamo qui per te</h2>
+            <p className="text-xl text-gray-600 mb-12 leading-relaxed">
+              Che tu voglia saperne di più, suggerire una nuova esperienza o semplicemente fare quattro chiacchiere, 
+              siamo sempre felici di ascoltarti.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -73,10 +74,12 @@ const ContactForm = () => {
           <div className="reveal-on-scroll">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
-                Il Nostro Team
+                Chi Siamo
               </span>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Le persone dietro Townly</h2>
-              
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">Le persone dietro le esperienze</h2>
+              <p className="text-lg text-gray-600">
+                Due anime che credono nel potere delle piccole scoperte quotidiane
+              </p>
             </div>
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">

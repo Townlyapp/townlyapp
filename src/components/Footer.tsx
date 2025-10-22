@@ -11,8 +11,9 @@ const Footer = () => {
           <div className="mb-5">
             <span className="text-townly-orange text-2xl font-bold">Townly</span>
           </div>
-          <p className="text-gray-600 mb-6 max-w-md text-center">
-            Trasformiamo il welfare aziendale in un'esperienza integrata con il territorio, ottimizzando costi e migliorando KPI aziendali.
+          <p className="text-gray-600 mb-6 max-w-md text-center text-lg">
+            Ogni giorno è un'occasione per scoprire qualcosa di nuovo. 
+            Vivi la tua città con occhi diversi.
           </p>
         </div>
         

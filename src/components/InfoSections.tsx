@@ -27,31 +27,31 @@ const InfoSections = () => {
 
   const sections = [
     {
-      id: 'home',
-      title: 'Radicamento Locale',
-      description: "Riduci i tempi di adattamento dei nuovi assunti con un sistema strutturato di integrazione locale. I dipendenti soddisfatti sono più produttivi e hanno meno probabilità di cercare nuove opportunità.",
+      id: 'natura',
+      title: 'Avventure nella Natura',
+      description: "Respira aria fresca e riconnettiti con la natura a due passi da casa. Escursioni, passeggiate a cavallo, pic-nic panoramici: ogni esperienza è un tuffo nel verde che ti fa dimenticare lo stress della città.",
       icon: Home,
-      color: 'text-townly-orange bg-townly-orange/10',
+      color: 'text-green-600 bg-green-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
       direction: 'right',
       animation: 'animate-fade-in-right'
     },
     {
-      id: 'community',
-      title: 'Formazione Ottimizzata',
-      description: "Taglia i costi di formazione tradizionale con un mix strategico di training online e offline. Eventi formativi mirati che trasformano l'apprendimento in vantaggio competitivo misurabile con analytics di engagement.",
-      icon: LineChart,
-      color: 'text-blue-600 bg-blue-600/10',
+      id: 'cultura',
+      title: 'Arte e Cultura Locale',
+      description: "Scopri i tesori nascosti della tua città. Musei segreti, atelier d'artista, storie dimenticate: ogni esperienza culturale è un viaggio nel tempo e nella bellezza che ti circonda senza che tu lo sappia.",
+      icon: Smile,
+      color: 'text-purple-600 bg-purple-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
       direction: 'left',
       animation: 'animate-fade-in-left'
     },
     {
-      id: 'ambiente',
-      title: 'ESG e Sostenibilità',
-      description: "Raggiungi e documenta facilmente gli obiettivi ESG con una piattaforma che misura l'impatto sociale, il benessere dei dipendenti e la sostenibilità delle iniziative. Semplifica la rendicontazione con dati automatizzati e KPI chiari.",
-      icon: Smile,
-      color: 'text-green-600 bg-green-600/10',
+      id: 'food',
+      title: 'Sapori Autentici',
+      description: "Assaggia la vera anima della città. Mercati rionali, trattorie familiari, corsi di cucina con nonne doc: ogni boccone racconta una storia, ogni ricetta è un pezzo di tradizione che diventa tuo.",
+      icon: Users,
+      color: 'text-townly-orange bg-townly-orange/10',
       imageSrc: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
       direction: 'right',
       animation: 'animate-fade-in-right'
@@ -64,11 +64,12 @@ const InfoSections = () => {
       <div className="section-container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-16 reveal-on-scroll">
           <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
-            Ottimizzazione dei Costi
+            Esplora per Tema
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Welfare che genera valore aziendale</h2>
-          <p className="text-lg text-gray-600">
-            Scopri come Townly trasforma il welfare in un centro di profitto, migliorando KPI aziendali e riducendo costi operativi legati a formazione e turnover.
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Trova la tua prossima avventura</h2>
+          <p className="text-xl text-gray-600 leading-relaxed">
+            Che tu cerchi relax, adrenalina, cultura o convivialità, 
+            abbiamo l'esperienza perfetta per te.
           </p>
         </div>
         

@@ -1,16 +1,16 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
 import InfoSections from '@/components/InfoSections';
-import AppDemo from '@/components/AppDemo';
+import Testimonials from '@/components/Testimonials';
 import ContactForm from '@/components/ContactForm';
 import Footer from '@/components/Footer';
-import { CategorySection } from '@/components/CategorySection';
 import { ExperienceGrid } from '@/components/ExperienceGrid';
 import { fetchProducts, ShopifyProduct } from '@/lib/shopify';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const Index = () => {
@@ -60,35 +60,44 @@ const Index = () => {
       <main>
         <Hero />
         
-        <CategorySection />
+        <HowItWorks />
         
-        <section className="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Esperienze in Evidenza
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto mb-8">
-              Scopri le esperienze più popolari selezionate per te
-            </p>
-          </div>
-          
-          <ExperienceGrid products={products.slice(0, 6)} isLoading={isLoading} />
-          
-          {products.length > 0 && (
-            <div className="text-center mt-12">
-              <Link to="/esperienze">
-                <Button size="lg" className="bg-townly-orange hover:bg-townly-orangeDark">
-                  Vedi tutte le esperienze
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
+        <section id="esperienze" className="py-20 bg-gradient-to-b from-orange-50/30 to-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm mb-4">
+                <Sparkles className="w-4 h-4 text-townly-orange" />
+                <span className="text-sm font-medium text-gray-700">Le più amate</span>
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-4">
+                Esperienze da non perdere
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Selezionate con cura per regalarti momenti indimenticabili
+              </p>
             </div>
-          )}
+            
+            <ExperienceGrid products={products.slice(0, 6)} isLoading={isLoading} />
+            
+            {products.length > 0 && (
+              <div className="text-center mt-12">
+                <Link to="/esperienze">
+                  <Button 
+                    size="lg" 
+                    className="bg-gradient-to-r from-townly-orange to-townly-orangeLight hover:shadow-xl hover:scale-105 transition-all duration-300"
+                  >
+                    Scopri tutte le esperienze
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
+            )}
+          </div>
         </section>
 
-        <Features />
         <InfoSections />
-        <AppDemo />
+        <Features />
+        <Testimonials />
         <ContactForm />
       </main>
       <Footer />

@@ -1,47 +1,61 @@
-
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Sparkles } from 'lucide-react';
 
 const Hero = () => {
-  return <section id="home" className="relative pt-20 pb-16 md:py-32 overflow-hidden">
-      {/* Background image */}
+  return (
+    <section id="home" className="relative pt-20 pb-16 md:pt-32 md:pb-24 overflow-hidden">
+      {/* Background with gradient overlay */}
       <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-br from-orange-50 via-amber-50 to-orange-100 opacity-60"></div>
         <img 
           src="./bg.png" 
-          alt="Business team" 
-          className="w-full h-full object-cover opacity-20"
+          alt="Persone che vivono esperienze autentiche" 
+          className="w-full h-full object-cover opacity-15"
         />
       </div>
       
-      {/* Decorative elements */}
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-townly-orange opacity-5 rounded-full blur-3xl animate-float"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-72 h-72 bg-townly-orangeLight opacity-5 rounded-full blur-3xl animate-float" style={{
-      animationDelay: '2s'
-    }}></div>
+      {/* Decorative elements - più vivaci */}
+      <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-gradient-to-br from-townly-orange to-townly-orangeLight opacity-10 rounded-full blur-3xl animate-float"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-gradient-to-br from-amber-400 to-orange-400 opacity-10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
       
       <div className="section-container relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          <div className="space-y-8 animate-fade-in">
-            <div>
-              
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tighter">
-                Diamo valore al <span className="text-townly-orange">tempo</span> fuori dall'ufficio
-              </h1>
-              <p className="mt-6 text-lg text-gray-700 md:text-xl max-w-xl">
-                Con Townly, ogni dipendente si integra facilmente nella città grazie a formazione, eventi culturali e networking. L’azienda migliora il work-life balance, rafforza la cultura aziendale e supporta la reportistica ESG.
-              </p>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4">
-              <a href="#about" className="inline-flex items-center justify-center px-6 py-3 bg-townly-orange text-white font-medium rounded-lg hover:bg-townly-orangeDark transition duration-300 ease-in-out hover-glow">
-                Scopri di più
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </div>
+        <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
+          {/* Badge emozionale */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full shadow-sm border border-orange-100">
+            <Sparkles className="w-4 h-4 text-townly-orange" />
+            <span className="text-sm font-medium text-gray-700">Vivi la tua città come mai prima</span>
           </div>
           
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+            Scopri la tua città attraverso{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-townly-orange to-townly-orangeLight">
+              esperienze autentiche
+            </span>
+          </h1>
           
+          <p className="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            Non tour guidati, ma avventure da vivere. Non corsi, ma momenti che ricorderai. 
+            Ogni esperienza è un viaggio nel cuore della città.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
+            <a 
+              href="#esperienze" 
+              className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-townly-orange to-townly-orangeLight text-white font-semibold rounded-xl hover:shadow-xl hover:scale-105 transition-all duration-300"
+            >
+              Scopri le esperienze
+              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+            <a 
+              href="#come-funziona" 
+              className="inline-flex items-center justify-center px-8 py-4 bg-white/80 backdrop-blur-sm text-gray-700 font-semibold rounded-xl hover:bg-white hover:shadow-lg transition-all duration-300 border border-gray-200"
+            >
+              Come funziona
+            </a>
+          </div>
         </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;
