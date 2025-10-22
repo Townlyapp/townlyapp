@@ -1,7 +1,6 @@
 import { Phone, Mail, MapPin } from 'lucide-react';
 import BlurContainer from './ui/BlurContainer';
 import { Avatar, AvatarFallback, AvatarImage } from './ui/avatar';
-
 const TeamMember = ({
   name,
   role,
@@ -23,15 +22,10 @@ const TeamMember = ({
     </Avatar>
     <h4 className="text-lg font-semibold">{name}</h4>
     <p className="text-gray-600">{role}</p>
-    <a 
-      href={linkedin}
-      target='_blank'
-      className="text-townly-orange hover:underline"
-    >
+    <a href={linkedin} target='_blank' className="text-townly-orange hover:underline">
         LinkedIn
     </a>
   </div>;
-
 const ContactForm = () => {
   return <section id="contact" className="py-24 relative">
       <div className="absolute inset-0 bg-gray-50 opacity-50"></div>
@@ -71,26 +65,9 @@ const ContactForm = () => {
             </div>
           </div>
           
-          <div className="reveal-on-scroll">
-            <div className="text-center max-w-3xl mx-auto mb-16">
-              <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
-                Chi Siamo
-              </span>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6">Le persone dietro le esperienze</h2>
-              <p className="text-lg text-gray-600">
-                Due anime che credono nel potere delle piccole scoperte quotidiane
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 max-w-2xl mx-auto">
-              <TeamMember name="Iuliana Lupascu" role="Co-Founder" imgSrc="./iuliana.jpeg" initials="I" linkedin='https://www.linkedin.com/in/iuliana-lupascu-3b49591a2/' />
-              
-              <TeamMember name="Cristian Bignardi" role="Co-Founder" imgSrc="./cristian.jpeg" initials="C" linkedin='https://www.linkedin.com/in/cristian-bignardi-658a00a3/'/>
-            </div>
-          </div>
+          
         </div>
       </div>
     </section>;
 };
-
 export default ContactForm;
