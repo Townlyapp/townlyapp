@@ -7,24 +7,24 @@ import Footer from "@/components/Footer";
 
 const categoryInfo: Record<string, { title: string; description: string }> = {
   natura: {
-    title: "Esperienze nella Natura",
-    description: "Immergiti nel verde: escursioni, trekking e avventure all'aria aperta"
+    title: "Immergiti nella natura",
+    description: "Respira aria pura, cammina tra i sentieri nascosti e riscopri il contatto con la natura. Ogni passo è un'emozione."
   },
   artigianato: {
-    title: "Workshop Artigianali",
-    description: "Crea con le tue mani: laboratori e workshop con artigiani locali"
+    title: "Crea con le tue mani",
+    description: "Impara dai maestri artigiani locali, scopri tecniche antiche e porta a casa qualcosa che hai creato tu."
   },
   enogastronomia: {
-    title: "Gusto e Tradizione",
-    description: "Sapori autentici: degustazioni, tour gastronomici e cooking class"
+    title: "Sapori del territorio",
+    description: "Assaggia la tradizione, scopri ricette tramandate da generazioni e lasciati conquistare dai sapori autentici."
   },
   sport: {
-    title: "Sport e Avventura",
-    description: "Adrenalina pura: attività sportive e avventure nel territorio"
+    title: "Avventura e adrenalina",
+    description: "Sfida te stesso, vivi emozioni forti e scopri il territorio da una prospettiva completamente nuova."
   },
   cultura: {
-    title: "Arte e Cultura",
-    description: "Scopri la storia: tour culturali, musei e visite guidate"
+    title: "Storie e tradizioni",
+    description: "Ogni luogo ha una storia da raccontare. Scoprila attraverso gli occhi di chi la vive ogni giorno."
   },
 };
 

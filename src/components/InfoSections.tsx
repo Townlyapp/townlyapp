@@ -28,8 +28,8 @@ const InfoSections = () => {
   const sections = [
     {
       id: 'natura',
-      title: 'Avventure nella Natura',
-      description: "Respira aria fresca e riconnettiti con la natura a due passi da casa. Escursioni, passeggiate a cavallo, pic-nic panoramici: ogni esperienza è un tuffo nel verde che ti fa dimenticare lo stress della città.",
+      title: 'Immergiti nella natura',
+      description: "Respira aria pura e riconnettiti con la natura. Cammina tra sentieri nascosti, scopri panorami mozzafiato e lasciati sorprendere dalla bellezza che ti circonda. Ogni passo è un'emozione.",
       icon: Home,
       color: 'text-green-600 bg-green-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -38,8 +38,8 @@ const InfoSections = () => {
     },
     {
       id: 'cultura',
-      title: 'Arte e Cultura Locale',
-      description: "Scopri i tesori nascosti della tua città. Musei segreti, atelier d'artista, storie dimenticate: ogni esperienza culturale è un viaggio nel tempo e nella bellezza che ti circonda senza che tu lo sappia.",
+      title: 'Storie e tradizioni',
+      description: "Ogni luogo ha un'anima, ogni pietra racconta una storia. Scopri l'essenza del territorio attraverso l'arte, le tradizioni e i racconti di chi lo vive ogni giorno. Lasciati conquistare dalla bellezza autentica.",
       icon: Smile,
       color: 'text-purple-600 bg-purple-600/10',
       imageSrc: 'https://images.unsplash.com/photo-1519389950473-47ba0277781c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -48,8 +48,8 @@ const InfoSections = () => {
     },
     {
       id: 'food',
-      title: 'Sapori Autentici',
-      description: "Assaggia la vera anima della città. Mercati rionali, trattorie familiari, corsi di cucina con nonne doc: ogni boccone racconta una storia, ogni ricetta è un pezzo di tradizione che diventa tuo.",
+      title: 'Sapori del territorio',
+      description: "Ogni boccone è un viaggio, ogni ricetta racconta una tradizione. Assapora i sapori autentici, impara dai maestri locali e porta a casa un pezzo di territorio. La vera essenza del luogo si scopre a tavola.",
       icon: Users,
       color: 'text-townly-orange bg-townly-orange/10',
       imageSrc: 'https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&q=80&w=1024',
@@ -66,10 +66,10 @@ const InfoSections = () => {
           <span className="inline-block px-4 py-1 mb-4 text-sm font-medium bg-townly-orange/10 text-townly-orange rounded-full">
             Esplora per Tema
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Trova la tua prossima avventura</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">Come vuoi vivere il territorio?</h2>
           <p className="text-xl text-gray-600 leading-relaxed">
-            Che tu cerchi relax, adrenalina, cultura o convivialità, 
-            abbiamo l'esperienza perfetta per te.
+            Ogni esperienza è un modo diverso di scoprire l'autenticità del luogo. 
+            Scegli quella che fa vibrare il tuo cuore.
           </p>
         </div>
         

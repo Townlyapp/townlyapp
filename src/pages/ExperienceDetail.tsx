@@ -123,63 +123,108 @@ const ExperienceDetail = () => {
 
             <div className="space-y-6">
               <div>
-                <Badge className="mb-2 bg-townly-orange">Esperienza Locale</Badge>
-                <h1 className="text-4xl font-bold mb-4">{product.title}</h1>
+                <Badge className="mb-3 bg-gradient-to-r from-townly-orange to-townly-orangeLight text-white border-none">
+                  ✨ Esperienza Autentica
+                </Badge>
+                <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                  {product.title}
+                </h1>
                 
-                <div className="flex items-center gap-6 text-muted-foreground mb-6">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-5 w-5" />
-                    <span>Territorio locale</span>
+                <div className="flex flex-wrap gap-4 text-gray-600 mb-6">
+                  <div className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg">
+                    <MapPin className="h-5 w-5 text-townly-orange" />
+                    <span className="font-medium">Territorio locale</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Clock className="h-5 w-5" />
-                    <span>2-4 ore</span>
+                  <div className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg">
+                    <Clock className="h-5 w-5 text-townly-orange" />
+                    <span className="font-medium">2-4 ore</span>
                   </div>
-                  <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5" />
-                    <span>2-10 persone</span>
+                  <div className="flex items-center gap-2 bg-gray-50 px-3 py-2 rounded-lg">
+                    <Users className="h-5 w-5 text-townly-orange" />
+                    <span className="font-medium">2-10 persone</span>
                   </div>
                 </div>
 
-                <div className="border-t border-b py-4 mb-6">
-                  <p className="text-3xl font-bold text-townly-orange">€{price.toFixed(2)}</p>
-                  <p className="text-sm text-muted-foreground">a persona</p>
+                <div className="bg-gradient-to-br from-orange-50 to-white border-2 border-orange-100 rounded-xl p-6 mb-6">
+                  <div className="flex items-baseline gap-2 mb-1">
+                    <span className="text-sm text-gray-600">A partire da</span>
+                    <p className="text-4xl font-bold bg-gradient-to-r from-townly-orange to-townly-orangeLight bg-clip-text text-transparent">
+                      €{price.toFixed(0)}
+                    </p>
+                  </div>
+                  <p className="text-sm text-gray-600">a persona</p>
                 </div>
 
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  {product.description}
-                </p>
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold">Cosa vivrai</h2>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    {product.description}
+                  </p>
+                </div>
               </div>
 
-              <div className="space-y-4">
-                <h3 className="font-bold text-xl">Cosa include</h3>
-                <ul className="space-y-2">
-                  {['Guida esperta', 'Materiali necessari', 'Assicurazione', 'Assistenza durante l\'esperienza'].map((item, idx) => (
-                    <li key={idx} className="flex items-center gap-2">
-                      <CheckCircle className="h-5 w-5 text-green-500" />
-                      <span>{item}</span>
+              <Card className="p-6 bg-gradient-to-br from-green-50 to-white border-green-100">
+                <h3 className="font-bold text-xl mb-4 flex items-center gap-2">
+                  <CheckCircle className="h-6 w-6 text-green-600" />
+                  Cosa include
+                </h3>
+                <ul className="space-y-3">
+                  {[
+                    'Guida locale esperta e appassionata',
+                    'Tutti i materiali necessari',
+                    'Assicurazione completa',
+                    'Assistenza durante tutta l\'esperienza',
+                    'Ricordi indimenticabili'
+                  ].map((item, idx) => (
+                    <li key={idx} className="flex items-start gap-3">
+                      <CheckCircle className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
+                      <span className="text-gray-700">{item}</span>
                     </li>
                   ))}
                 </ul>
-              </div>
+              </Card>
             </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <div className="lg:col-span-2">
-              <Card className="p-6">
-                <h3 className="font-bold text-2xl mb-4">Dettagli dell'esperienza</h3>
+              <Card className="p-8 border-none shadow-xl">
+                <h3 className="font-bold text-3xl mb-6">L'esperienza nel dettaglio</h3>
                 <div className="prose prose-lg max-w-none">
-                  <p className="text-muted-foreground">
+                  <p className="text-gray-700 text-lg leading-relaxed mb-6">
                     {product.description}
                   </p>
+                  
+                  <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 my-8 border border-blue-100">
+                    <h4 className="font-bold text-xl mb-4 text-gray-900">
+                      💡 Perché scegliere questa esperienza?
+                    </h4>
+                    <ul className="space-y-3 text-gray-700">
+                      <li className="flex items-start gap-2">
+                        <span className="text-townly-orange font-bold">→</span>
+                        <span>Scoprirai luoghi che solo i locali conoscono</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-townly-orange font-bold">→</span>
+                        <span>Vivrai un'esperienza autentica, lontana dal turismo di massa</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-townly-orange font-bold">→</span>
+                        <span>Sarai guidato da esperti appassionati del territorio</span>
+                      </li>
+                      <li className="flex items-start gap-2">
+                        <span className="text-townly-orange font-bold">→</span>
+                        <span>Porterai a casa ricordi indimenticabili</span>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </Card>
             </div>
 
             <div className="lg:col-span-1">
-              <Card className="p-6 sticky top-24">
-                <h3 className="font-bold text-xl mb-4">Seleziona una data</h3>
+              <Card className="p-6 sticky top-24 border-2 border-orange-100 shadow-xl">
+                <h3 className="font-bold text-xl mb-4">Prenota la tua esperienza</h3>
                 
                 <Calendar
                   mode="single"
@@ -214,12 +259,16 @@ const ExperienceDetail = () => {
 
                 <Button 
                   onClick={handleAddToCart}
-                  className="w-full bg-townly-orange hover:bg-townly-orangeDark"
+                  className="w-full bg-gradient-to-r from-townly-orange to-townly-orangeLight hover:shadow-2xl hover:scale-105 transition-all duration-300"
                   size="lg"
                 >
                   <ShoppingCart className="h-5 w-5 mr-2" />
-                  Prenota Esperienza
+                  Aggiungi al carrello
                 </Button>
+                
+                <p className="text-xs text-center text-gray-500 mt-3">
+                  🔒 Prenotazione sicura • Assistenza garantita
+                </p>
               </Card>
             </div>
           </div>
