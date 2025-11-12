@@ -23,8 +23,8 @@ const Navbar = () => {
   const menuItems = [
     { name: 'Home', href: '/' },
     { name: 'Esperienze', href: '/esperienze' },
+    { name: 'Magazine', href: '/magazine' },
     { name: 'Chi Siamo', href: '/chi-siamo' },
-    { name: 'Diventa Partner', href: '/partner' },
     { name: 'Contatti', href: '/#contact' },
   ];
 
