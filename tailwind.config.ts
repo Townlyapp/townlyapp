@@ -63,7 +63,7 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Townly
+				// Custom colors for Townly - Vibrant Emilia-Romagna palette
 				townly: {
 					orange: "#FF7D1A",
 					orangeLight: "#FFA763",
@@ -71,6 +71,13 @@ export default {
 					navy: "#1E3A5F",
 					gray: "#F5F7FA",
 					grayDark: "#667085",
+					// New vibrant colors
+					sun: "hsl(45, 100%, 60%)",
+					earth: "hsl(25, 65%, 50%)",
+					sea: "hsl(195, 100%, 45%)",
+					hills: "hsl(90, 40%, 50%)",
+					terracotta: "hsl(15, 75%, 55%)",
+					sage: "hsl(120, 20%, 60%)",
 				}
 			},
 			borderRadius: {

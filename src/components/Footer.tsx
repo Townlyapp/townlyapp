@@ -1,31 +1,44 @@
-
-import { cn } from '@/lib/utils';
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
   return (
-    <footer className="bg-white border-t border-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-        <div className="flex flex-col items-center justify-center">
-          <div className="mb-5">
-            <span className="text-townly-orange text-2xl font-bold">Townly</span>
+    <footer className="bg-foreground text-background">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <div className="col-span-1 md:col-span-2">
+            <div className="flex items-center gap-2 mb-4">
+              <img src="/logo.png" alt="Townly" className="h-12 w-auto brightness-0 invert" />
+            </div>
+            <p className="text-background/80 mb-4 leading-relaxed">
+              L'Emilia-Romagna come non l'hai mai vista. Esperienze vere, gente vera, momenti veri. 
+              Stop al turismo classico, benvenuto nell'avventura.
+            </p>
           </div>
-          <p className="text-gray-600 mb-6 max-w-md text-center text-lg">
-            Ogni giorno è un'occasione per scoprire qualcosa di nuovo. 
-            Vivi la tua città con occhi diversi.
-          </p>
+
+          <div>
+            <h3 className="font-bold text-lg mb-4">Link veloci</h3>
+            <ul className="space-y-2">
+              <li><a href="/esperienze" className="text-background/70 hover:text-background transition-colors">Esperienze</a></li>
+              <li><a href="/chi-siamo" className="text-background/70 hover:text-background transition-colors">Chi Siamo</a></li>
+              <li><a href="/partner" className="text-background/70 hover:text-background transition-colors">Diventa Partner</a></li>
+              <li><a href="/#contact" className="text-background/70 hover:text-background transition-colors">Contatti</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h3 className="font-bold text-lg mb-4">Seguici</h3>
+            <ul className="space-y-2">
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Instagram</a></li>
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">Facebook</a></li>
+              <li><a href="#" className="text-background/70 hover:text-background transition-colors">TikTok</a></li>
+            </ul>
+          </div>
         </div>
         
-        <div className="mt-12 pt-8 border-t border-gray-200 flex flex-col md:flex-row justify-center items-center">
-          <p className="text-gray-500 text-sm">
-            &copy; {currentYear} Townly. P.IVA 04133580367. Tutti i diritti riservati.
+        <div className="pt-8 border-t border-background/20 text-center">
+          <p className="text-background/70 text-sm">
+            &copy; {currentYear} Townly. P.IVA 04133580367. Made with ❤️ in Emilia-Romagna
           </p>
-          <div className="mt-4 md:mt-0 md:ml-6">
-            <a href="#" className="text-gray-500 hover:text-townly-orange transition-colors duration-200 text-sm">
-              Made with <span className="text-townly-orange">♥</span> in Italy
-            </a>
-          </div>
         </div>
       </div>
     </footer>

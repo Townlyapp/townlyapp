@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
+import MoodSelector from '@/components/MoodSelector';
 import HowItWorks from '@/components/HowItWorks';
 import Features from '@/components/Features';
 import InfoSections from '@/components/InfoSections';
@@ -60,20 +61,22 @@ const Index = () => {
       <main>
         <Hero />
         
+        <MoodSelector />
+        
         <HowItWorks />
         
-        <section id="esperienze" className="py-20 bg-gradient-to-b from-orange-50/30 to-white">
+        <section id="esperienze" className="py-20 bg-gradient-to-b from-accent/20 to-background">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full shadow-sm mb-4">
-                <Sparkles className="w-4 h-4 text-townly-orange" />
-                <span className="text-sm font-medium text-gray-700">Le più amate</span>
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-primary/10 rounded-full mb-4">
+                <Sparkles className="w-4 h-4 text-primary" />
+                <span className="text-sm font-medium text-primary">Le più prenotate</span>
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-4">
-                Esperienze da non perdere
+              <h2 className="mb-4">
+                Quelle che vanno a ruba
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Selezionate con cura per regalarti momenti indimenticabili
+              <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+                Le esperienze più richieste del momento. Prenota prima che finiscano i posti!
               </p>
             </div>
             
@@ -84,9 +87,9 @@ const Index = () => {
                 <Link to="/esperienze">
                   <Button 
                     size="lg" 
-                    className="bg-gradient-to-r from-townly-orange to-townly-orangeLight hover:shadow-xl hover:scale-105 transition-all duration-300"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-xl hover:scale-105 transition-all duration-300 rounded-full px-8"
                   >
-                    Scopri tutte le esperienze
+                    Vedi tutte le esperienze
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                 </Link>

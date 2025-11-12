@@ -8,34 +8,42 @@
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 20 14% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 20 14% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 20 14% 20%;
 
     --primary: 24 100% 55%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 45 100% 96%;
+    --secondary-foreground: 20 14% 20%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 45 50% 95%;
+    --muted-foreground: 20 10% 50%;
 
-    --accent: 24 100% 95%;
-    --accent-foreground: 24 80% 40%;
+    --accent: 160 84% 95%;
+    --accent-foreground: 160 70% 30%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
+    --border: 45 30% 90%;
+    --input: 45 30% 92%;
     --ring: 24 100% 55%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
+
+    /* Vibrant Emilia-Romagna colors */
+    --sun: 45 100% 60%;
+    --earth: 25 65% 50%;
+    --sea: 195 100% 45%;
+    --hills: 90 40% 50%;
+    --terracotta: 15 75% 55%;
+    --sage: 120 20% 60%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -93,15 +101,23 @@
   }
 
   .glass-card {
-    @apply bg-white/90 backdrop-blur-xl rounded-3xl shadow-xl border border-white/30;
+    @apply bg-white/95 backdrop-blur-2xl rounded-2xl shadow-lg border border-white/40;
   }
 
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply tracking-tight;
+    @apply tracking-tight font-bold;
+  }
+
+  h1 {
+    @apply text-5xl md:text-6xl lg:text-7xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
   }
 
   .reveal-on-scroll {
